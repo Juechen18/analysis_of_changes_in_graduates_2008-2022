@@ -1,4 +1,4 @@
-from requests_html import HTMLSession # type: ignore
+from requests_html import HTMLSession # type: ignore 
 import os
 
 # 创建HTMLSession对象
@@ -51,9 +51,9 @@ with open(output_file_path, 'w', encoding='utf-8') as file:
                 file.write(page_text)
                 file.write("\n\n")
             else:
-                print(f"无法获取内容，URL: {url}")
+                print(f"无法获取内容,URL: {url}")
         except Exception as e:
-            print(f"请求失败，URL: {url}, 错误: {e}")
+            print(f"请求失败,URL: {url}, 错误: {e}")
 
 print(f"数据已保存到 {output_file_path} 文件中")
 
