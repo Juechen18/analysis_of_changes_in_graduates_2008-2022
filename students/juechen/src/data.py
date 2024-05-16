@@ -1,4 +1,4 @@
-from requests_html import HTMLSession
+from requests_html import HTMLSession # type: ignore
 import os
 
 # 创建HTMLSession对象
